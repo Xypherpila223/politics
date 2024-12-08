@@ -6,7 +6,7 @@ function Header({ onSearch }) {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get("http://localhost:3002/search", {
+      const response = await axios.get("https://2tvzmld7-3002.asse.devtunnels.ms/search", {
         params: { title: searchQuery },
       });
       onSearch(response.data); // Send the search results to the parent
